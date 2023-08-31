@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+img{
+      height: 6rem;
+      object-fit: contain;
+    }
+    
+    .ImagenLogo{
+      height: 6rem;
+      border-radius: 0.6rem;
+    }
+    
+    span{
+      padding-left: 0.5rem;
+      color: rgb(255, 255, 255) ;
+    }
+
+.logo{
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+.nombreLocal a{
+      margin-left: 1rem;
+      font-family: 'EB Garamond', serif;
+      font-size: 3rem;
+      color: #7577cd;
+}
+
+.categorias a{
+      color: rgb(243, 233, 233);
+      font-family: 'Quicksand', sans-serif;
+      font-weight:bold;
+}
+    
+.carrito img{
+      height: 2rem;
+}

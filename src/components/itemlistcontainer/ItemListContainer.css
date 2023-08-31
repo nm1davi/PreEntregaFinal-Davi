@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.ImgCards{
+      object-fit: contain;
+    
+    }
+    
+    .Cards{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .card{
+      align-items: center;
+      text-align: center;
+      background-image: linear-gradient(to bottom, #212529, #1c1d20, #171618, #0e0c0e, #000000);
+      font-family: 'DM Sans', sans-serif;
+      color:rgb(255, 233, 233) !important;
+    }
+
+    .TituloCard{
+      font-size: 1rem;
+      
+    }
+
+    .tituloContenedor{
+      text-align: center;
+      align-items: center;
+      color: rgb(73, 73, 73);
+      font-family: 'Quicksand', sans-serif;
+      font-weight:bold;
+    }

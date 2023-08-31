@@ -1,8 +1,13 @@
-img{
-  height: 1.5rem;
+.contenedor{
+  margin: 0.5rem;
+  /* background-image: linear-gradient(to bottom, #212529, #1c1d20, #171618, #0e0c0e, #000000); */
+  border-radius: 0.5rem;
 }
 
-span{
-  padding-left: 0.5rem;
-  color: white ;
+
+.ItemCount  span{
+  color: black;
+  padding: 1rem;
 }
+
+

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.detalleVino{
+      align-items: center;
+      text-align: center;
+      color: rgb(73, 73, 73);
+      font-family: 'Quicksand', sans-serif;
+      font-weight:bold;
+}
+
+.cargando{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20%;
+      color: rgb(73, 73, 73);
+      font-family: 'Quicksand', sans-serif;
+      font-weight:bold;
+}
