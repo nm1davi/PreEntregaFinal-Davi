@@ -25,7 +25,7 @@ export const ItemListConainer = (props) => {
                         setProductos(productosFiltrados);
                   }
             });
-      }, [])
+      }, [id]);
 
       return (
       <div className='contenedor'> 

@@ -18,7 +18,7 @@ export const ItemDetailConainer = (props) => {
             }, 2000);
             })
             promise.then(data => setProducto(data));
-      }, [])
+      }, [id]);
 
       if(!producto) return  <div className='cargando'><h1>CARGANDO...<i class="bi bi-arrow-repeat"></i></h1></div>
       return (
