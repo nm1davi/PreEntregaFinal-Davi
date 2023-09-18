@@ -1,7 +1,9 @@
 .contenedor{
   margin: 0.5rem;
-  /* background-image: linear-gradient(to bottom, #212529, #1c1d20, #171618, #0e0c0e, #000000); */
+  background-position: center;
+  background-size: cover;
   border-radius: 0.5rem;
+  min-height: 35vh;
 }
 
 
@@ -10,4 +12,21 @@
   padding: 1rem;
 }
 
+body{
+  background-image: url("../public/image/Montaña.jpg");
+  background-position: center;
+  background-size:cover;
+  width: auto !important;
+  min-height: 100vh;
+}
 
+
+
+.ContainerCarritoVacio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 80vh;
+}

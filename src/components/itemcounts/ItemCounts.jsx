@@ -1,36 +1,29 @@
-import { useState } from "react";
+import { Link } from "react-router-dom"
+import "./ItemCounts.css"
 
-const stock = 4;
 
 
-export const ItemCounts = () => {
+export const ItemCounts = ({cantidad, handleDecreaseCount, handleIncreaseCount, onAdd, }) => {
       
-      const [count, setCount] = useState(1);
-
-      const handleDecreaseCount = () => {
-            if (count > 0 ) {
-                  setCount((prev) => prev - 1)
-            }
-      };
-      const handleIncreaseCount = () => {
-            if (stock > count){
-                  setCount((prev) => prev +1)
-            }
-      };
-      const onAdd = () => {
-            if (count > 1){
-                  alert(count + " Productos agregados al carrito")
-            }
-            else alert(count + " Producto agregado al carrito")
-      };
 
 
       return(
             <div className="ItemCount">
-                  <span onClick={handleDecreaseCount}>-</span>
-                  <span>{count}</span>
-                  <span onClick={handleIncreaseCount}>+</span>
-                  <button onClick={onAdd}>Agregar al Carrito</button>
+                  <div className="Handle">
+                  <button id="b1" onClick={handleDecreaseCount}>-</button>
+                  <span>{cantidad}</span>
+                  <button id="b2" onClick={handleIncreaseCount}>+</button>
+                  </div>
+                  <div className="botonesDeAbajo">
+                  <button className = "AgregarAlCarrito" onClick={onAdd}>
+                        <span>AGREGAR AL CARRITO</span>
+                        <span><i className="bi bi-cart-check"></i></span>
+                  </button>
+                  <button className="irCarrito">
+                  <span>IR AL CARRITO</span>
+                  <span><Link as ={Link} to="/carrito"><i className="bi bi-list-check"></i></Link></span>
+                  </button>
+                  </div>
             </div>
       )
 }

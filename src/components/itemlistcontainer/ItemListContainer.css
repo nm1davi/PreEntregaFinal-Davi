@@ -3,7 +3,7 @@
 
 .ImgCards{
       object-fit: contain;
-    
+      height: 13rem;
     }
     
     .Cards{
@@ -18,7 +18,7 @@
     .card{
       align-items: center;
       text-align: center;
-      background-image: linear-gradient(to bottom, #212529, #1c1d20, #171618, #0e0c0e, #000000);
+      background-color: rgba(31, 28, 28, 0.644) !important;
       font-family: 'DM Sans', sans-serif;
       color:rgb(255, 233, 233) !important;
     }
@@ -31,7 +31,7 @@
     .tituloContenedor{
       text-align: center;
       align-items: center;
-      color: rgb(73, 73, 73);
+      color: rgb(34, 33, 33);
       font-family: 'Quicksand', sans-serif;
       font-weight:bold;
     }

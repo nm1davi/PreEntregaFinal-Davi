@@ -1,30 +1,29 @@
 import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import data from "../../data/productos.json";
 import { ItemList } from '../itemlist/ItemList';
 import { useParams } from 'react-router-dom';
+import  { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../firebase/config"
 import "./ItemListContainer.css";
 
-export const ItemListConainer = (props) => {
+export const ItemListConainer = () => {
 
       const [productos,setProductos] = useState([]);
-
-      const{id}=useParams();
-      
+      const id=useParams().id;
 
 
       useEffect(()=>{
-            const promise = new Promise((resolve,reject) =>{
-                 setTimeout(()=> resolve(data), 2000);
+            const productosRef = collection(db, "Productos");
+            const q = id ? query(productosRef, where("categoria","==", id)) : productosRef;
+
+            getDocs(q)
+            .then((resp)=>{
+                  setProductos(
+                        resp.docs.map((doc)=>{
+                              return{...doc.data(), id: doc.id };
+                        })
+                  )
             })
-            promise.then((data) =>{
-                  if(!id){
-                  setProductos(data);
-                  } else {
-                        const productosFiltrados =  data.filter((producto) => producto.categoria  === id);
-                        setProductos(productosFiltrados);
-                  }
-            });
       }, [id]);
 
       return (

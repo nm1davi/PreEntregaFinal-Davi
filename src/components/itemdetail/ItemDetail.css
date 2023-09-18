@@ -12,3 +12,14 @@
       text-align: start;
       font-family: 'Source Sans 3', sans-serif;
 }
+.Stock{
+      background-color: rgba(53, 48, 48, 0.849) !important;
+      color:rgb(255, 255, 255) !important;
+      font-size: 1.5rem;
+}
+
+.ContenedorDetalle{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}

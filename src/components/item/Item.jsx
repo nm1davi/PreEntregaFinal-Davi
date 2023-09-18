@@ -15,7 +15,7 @@ Precio: ${precio} <br/>
 Stock: {stock}
 </Card.Text>
 <Link to = {`/item/${producto.id}`}>
-<Button variant="primary" >Descripción del Vino</Button>
+<Button className='BotonDescripcion' >Descripción del Vino</Button>
 </Link>
 </Card.Body>
 </Card>)};

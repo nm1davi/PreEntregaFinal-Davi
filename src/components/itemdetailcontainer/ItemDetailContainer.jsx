@@ -1,26 +1,27 @@
 import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import data from "../../data/productos.json";
 import { ItemDetail } from '../itemdetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import  { doc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase/config"
 import "./ItemDetailContainer.css"
 
 export const ItemDetailConainer = (props) => {
 
       const [producto,setProducto] = useState(null);
-      const  {id} = useParams();
-
+      const id = useParams().id;
       useEffect(()=>{
-            const promise = new Promise((resolve,reject) =>{
-                 setTimeout(()=> {
-                  const productoById = data.find(producto => producto.id === id)
-                  resolve(productoById)
-            }, 2000);
+
+            const docRef =  doc(db, "Productos", id);
+            getDoc(docRef)
+            .then((resp)=>{
+                  setProducto(
+                        {...resp.data(), id: resp.id}
+                  );
             })
-            promise.then(data => setProducto(data));
       }, [id]);
 
-      if(!producto) return  <div className='cargando'><h1>CARGANDO...<i class="bi bi-arrow-repeat"></i></h1></div>
+      if(!producto) return  <div className='cargando'><h1>CARGANDO...<i className="bi bi-arrow-repeat"></i></h1></div>
       return (
       <Container className='mt-4'>
             <div className='detalleVino'>

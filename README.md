@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+Profe, la App se trata de un E-commerce de Vinos:
+En la parte superior tiene un navbar para poder navegar y por los distintos vinos, podemos filtrar los vinos presionando los botones del Navbar, además también tiene una sección de contacto donde podemos enviar consultas acerca de los precios, stock, etc.
+También tiene una página principal donde podemos ver todos los vinos, si nos interesa alguna podemos ver más sobre este presionando el botón de "Descripción del Vino" ahí vamos a poder conocer acerca del Vino, su descripción y stock, también vamos a tener la posibilidad de sumar o restar unidades de vinos una vez en la parte de detalle, vamos a poder comprar solamente hasta la cantidad de ítem que tengamos en ese momento.
+Luego de agregarlos al carrito vamos a poder ir a la sección de confirmación de la compra (el carrito) donde encontramos el detalle de la compra que vamos a realizar, si hemos cometido algún error o nos arrepentimos acerca de las cantidades podemos o vaciarlo completamente y volver a comprar o eliminar por unidad de vino. Una vez que estemos de acuerdo con la cantidad y el precio Total, vamos a poder ir a la parte de confirmación donde van a solicitarnos nuestros datos para poder finalizar la compra.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En la sección de contacto y en la de envío (la parte final de la compra) nos solicitan datos y esos datos son enviados a una base de datos. En este caso a mi Firebase.
 
-## Available Scripts
+Agregue un video para demostrar como funciona la App. 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Quería agradecer a mi tutor Jhosep Davila, que estuvo atento a mis dudas en canda momento y lo hizo de manera rápida y concisa. 
+Y además quería agradecer al profe por la buena onda en sus clases y tomarse todo el tiempo para explicar y asegurarse de que entendiéramos. 
+Un saludo 

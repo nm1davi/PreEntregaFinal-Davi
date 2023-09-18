@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.TituloCarrito{
+  text-align: center;
+  align-items: center;
+  color: rgb(34, 33, 33);
+  font-family: 'Quicksand', sans-serif;
+  font-weight:bold;
+  min-height: 60vh;
+  margin-bottom: 1rem;
+}
+
+.ContainerCarrito{
+  min-height: 30vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  border: solid 1px #000000;
+  background: rgba(255, 255, 255, 0.377);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.ContainerCarrito table {
+  border-collapse: collapse; 
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+
+.ContainerCarrito th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+
+.ContainerCarrito td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.ContainerCarrito button {
+  color: red;
+  border: none;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.VaciarCarrito{
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      color: white;
+      font-weight: 400;
+      z-index: 1;
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease 0s;
+      outline: none;
+      margin-bottom: 0.5rem;
+}
+
+.VaciarCarrito span:first-child {
+      display: inline-block;
+      padding: 10px;
+    }
+
+.VaciarCarrito span:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-100%);
+    }
+    .VaciarCarrito  span {
+      transition: transform 0.2s ease-out;
+    }
+    .VaciarCarrito:hover span:first-child {
+      transform: translateX(200%);
+    }
+    .VaciarCarrito:hover span:last-child {
+      transform: none;
+    }
+    .botonesCarrito{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem;
+    }
+    .botonesCarrito a{
+      font-size: 1.3rem;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .FinalizarCompra{
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      color: white;
+      font-weight: 400;
+      z-index: 1;
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease 0s;
+      outline: none;
+      margin-bottom: 0.5rem;
+    }
+    .FinalizarCompra span:first-child {
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .FinalizarCompra span:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-100%);
+    }
+    .FinalizarCompra  span {
+      transition: transform 0.2s ease-out;
+    }
+    .FinalizarCompra:hover span:first-child {
+      transform: translateX(200%);
+    }
+    .FinalizarCompra:hover span:last-child {
+      transform: none;
+    }
