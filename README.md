@@ -5,7 +5,7 @@ Luego de agregarlos al carrito vamos a poder ir a la sección de confirmación d
 
 En la sección de contacto y en la de envío (la parte final de la compra) nos solicitan datos y esos datos son enviados a una base de datos. En este caso a mi Firebase.
 
-Agregue un video para demostrar como funciona la App. 
+Agregue un video para demostrar como funciona la App. (VideoMuestraApp)
 
 Quería agradecer a mi tutor Jhosep Davila, que estuvo atento a mis dudas en canda momento y lo hizo de manera rápida y concisa. 
 Y además quería agradecer al profe por la buena onda en sus clases y tomarse todo el tiempo para explicar y asegurarse de que entendiéramos. 
